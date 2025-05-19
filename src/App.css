@@ -1,0 +1,102 @@
+#root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+
+}
+
+
+body{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  background: linear-gradient(135deg, #0f2027, #2c5364 70%);
+  justify-content: center;
+  align-items: center;
+}
+.Bmi-calculator-container{
+  background:  rgba(255, 255, 255, 0.95);
+  display: flex;
+  border-radius: 18px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.25);
+  overflow: hidden;
+  margin: 20px;
+}
+.image-box {
+  width: 320px;
+  height: 420px;
+  background-image: url("./assets/Bmi_img.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 0 18px 18px 0;
+}
+
+
+
+.input-container h1{
+color: rgb(10, 177, 177);
+padding: 10px;
+text-align: center;
+margin-right: 10px;
+letter-spacing: 1px;
+font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+.input label{
+  color: rgb(8, 86, 86);
+  font-size: 1p8x;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 10px;
+}
+.input [type="text"] {
+   padding: 15px 10px;
+   font-size: 17spx;
+   border-radius: 10px;
+   margin-bottom: 10px;
+   outline: none;
+   border: 1px solid;
+   width: 80%;
+}
+.input [type="text"]:focus {
+  border: 2px solid #085656;
+  background: #e6f7fa;
+}
+.input-container button{
+  padding: 10px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  background-color: rgb(8, 133, 8);
+  color: aliceblue;
+  margin-top: 10px;
+  cursor:pointer;
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: 400;
+  width: 90%;
+}
+.result{
+  color: rgb(8, 11, 151);
+  border: 2px solid  rgb(10, 177, 177);
+ min-height: 95px;
+ width: 80%;
+ margin-bottom: 7px;
+ padding-left: 10px;
+ border-radius: 10px;
+ animation: fadeIn 0.7s;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px);}
+  to { opacity: 1; transform: translateY(0);}
+}
+.errormsg {
+  color: #e74c3c;
+  font-size: 1rem;
+  margin-bottom: 14px;
+  background: #ffeaea;
+  border-left: 4px solid #e74c3c;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+}
